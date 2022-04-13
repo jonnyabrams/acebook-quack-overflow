@@ -1,7 +1,58 @@
-<h1>Timeline</h1>
+{{!-- <h1>Timeline</h1>
 <ul class="posts">
   {{#each posts}}
   <li>{{this.message}}</li>
+  <li>{{this._id}}</li>
+  {{!-- <form action="/posts" method="post">
+    <input type='hidden' name='_method' value='DELETE'/>
+    <input id="post-delete-btn" type="submit" value="Delete posts">
+  <form> --}}
+
+
+
+{{!-- <form method="POST" action="/posts/{{_id}}?_method=DELETE">
+  <button type="submit">Delete</button>
+</form> --}}
+
+
+{{!-- 
+    <form method="POST" action="/posts">
+     <input type='hidden' name='_method' value='DELETE'>
+      <button type="submit" id="delete-post">Delete</button>
+
+
+  {{/each}}
+
+</ul>
+<a class="new-post-link" href="/posts/new">New post</a>
+ --}}
+
+
+
+
+   
+<h1>Timeline</h1>
+<ul class="posts">
+  {{#each posts}}
+  <div class="post-div" postId={{this._id}}>
+    <li>{{this.message}}</li>
+    <button class="like-button">Like</button>
+        <p innerText="0"></p>
+    <button class="delete-post-button">Delete post</button>
+  </div>
   {{/each}}
 </ul>
 <a class="new-post-link" href="/posts/new">New post</a>
+ <script>
+      let likeButtonElArr = document.querySelectorAll('.like-button');
+      likeButtonElArr.forEach(buttonEl => buttonEl.addEventListener('click',() => {
+      console.log('you clicked on edit btn!');}))
+
+      let deletePostArr = document.querySelectorAll('.delete-post-button');
+      deletePostArr.forEach(buttonEl => buttonEl.addEventListener('click',() => {
+      console.log('you deleted it');
+      res.redirect("posts/confirm");
+      }))
+
+</script>
+
