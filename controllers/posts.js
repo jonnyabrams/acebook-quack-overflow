@@ -23,6 +23,16 @@ const PostsController = {
       res.status(201).redirect("/posts");
     });
   },
+  Delete: (req, res) => {
+    let query = { _id: req.params.id };
+
+    Post.remove(query, (err) => {
+      if (err) {
+        console.log(err);
+      }
+      res.send("Success");
+    });
+  },
 };
 
 module.exports = PostsController;
