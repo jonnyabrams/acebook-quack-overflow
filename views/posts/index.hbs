@@ -5,7 +5,27 @@
   <div class="post-div" postId={{this._id}}>
     <div class="username">Username: {{this.username}}</div>
     <div class="message">{{this.message}}</div>
-    <div class="dateAndTime">{{this.dateAndTime}}</div>
+    <div class="timeSince">{{this.dateAndTime}}</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+
+    
+    
+    <script>
+      console.log("HERE");
+
+      const date = document.querySelector('.timeSince').innerText
+      console.log(date)
+  
+      const formattedDate = moment(date, moment.defaultFormat).toDate()
+      console.log(formattedDate)
+   
+      moment(`${formattedDate}`).fromNow();
+
+
+    </script>
+    </div>
+
     <br>
     <input type="button" value="Like" class="likeUnlike" data-button-id={{this._id}} >
   </div>
@@ -20,6 +40,7 @@
 </ul>
 </div>
 <a class="new-post-link" href="/posts/new">New post</a>
+
 
 
 
