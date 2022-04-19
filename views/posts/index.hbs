@@ -54,12 +54,10 @@
             </form>
           </div>
         <div>
-          <div>{{this.comments}}</div>
-          {{#each comments}}
-            <div class="username">Username: {{username}}</div>
-            {{!-- <div class="message">{{message}}</div>
-
-            <div class="timeAgo">{{dateAndTime}}</div> --}}
+          {{#each this.comments}}
+            <div>Username: {{this.username}}</div>
+            <div>{{this.message}}</div>
+            <div class="timeAgo">{{this.dateAndTime}}</div>
             <br /> 
           {{/each}}
         <br>
