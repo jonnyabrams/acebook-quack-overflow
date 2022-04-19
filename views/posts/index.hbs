@@ -44,7 +44,25 @@
               height="30"
             />
           </form>
-          <br />
+        </div>
+        <div id="comment">
+          <div class="new-comment">
+            <form id="new-comment-form" action="/posts/{{this._id}}/comment" method="post">
+              <label for="message"></label>
+              <input id="message" type="text" name="message" value="" required>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        <div>
+          <div>{{this.comments}}</div>
+          {{#each comments}}
+            <div class="username">Username: {{username}}</div>
+            {{!-- <div class="message">{{message}}</div>
+
+            <div class="timeAgo">{{dateAndTime}}</div> --}}
+            <br /> 
+          {{/each}}
+        <br>
         </div>
       {{/each}}
     </ul>

@@ -7,6 +7,7 @@ const PostsController = {
         throw err;
       }
       res.render("posts/index", { posts: posts });
+      console.log(posts)
     });
   },
   New: (req, res) => {
@@ -18,6 +19,7 @@ const PostsController = {
     post.username = req.session.user.username
     post.dateAndTime = Date()
     post.likes = []
+    post.comments 
 console.log(post)
 
     post.save((err) => {
@@ -35,7 +37,8 @@ console.log(post)
       console.log(req.body)
       res.redirect('/posts')
     })
-  })
+  }),
+  
 };
 
 module.exports = PostsController;
