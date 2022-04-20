@@ -2,17 +2,16 @@ const Post = require("../models/post");
 
 const PostsController = {
   Index: (req, res) => {
-    Post.find((err, posts) => {
+   Post.find((err, posts) => {
       if (err) {
         throw err;
       }
+      posts = posts.reverse();
       res.render("posts/index", { posts: posts });
       console.log(posts)
     });
   },
-  New: (req, res) => {
-    res.render("posts/new", {});
-  },
+
   Create: (req, res) => {
     let post = new Post();
     post.message = req.body.message;
@@ -20,7 +19,6 @@ const PostsController = {
     post.dateAndTime = Date()
     post.likes = []
     post.comments 
-console.log(post)
 
     post.save((err) => {
       if (err) {

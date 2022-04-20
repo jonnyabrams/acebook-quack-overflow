@@ -6,7 +6,6 @@ const CommentsController = require("../controllers/comments");
 
 router.get("/", PostsController.Index);
 router.post("/", PostsController.Create);
-router.get("/new", PostsController.New);
 router.post("/:id", PostsController.Delete);
 router.post("/:id/comment", CommentsController.Create);
 
