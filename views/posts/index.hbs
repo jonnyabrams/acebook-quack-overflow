@@ -16,7 +16,7 @@
 
 <div class="post-body">
 <div id="side-bar" class="column left">
-  <div class="user-profile" sessionUser={{user.username}}>
+  <div class="user-profile" sessionUser={{user.username}} sessionFriends={{user.friends}}>
     <img class="profile-img" src={{user.profilePic}}>
   </div>
 <p>Hello, {{user.username}}!!</p>
@@ -34,9 +34,7 @@
 {{myFriends}}
   <div id="post">
     <ul class="posts">
-      {{#each posts}}
-        {{!-- {{#if user.friends.includes(this.username)}} --}}
-        
+      {{#each posts}}        
         <div class="post-div">
           <div class="username" postUser={{this.username}} sessionUser={{user.username}}>Username: {{this.username}}</div>
           <div class="message">{{this.message}}</div>
