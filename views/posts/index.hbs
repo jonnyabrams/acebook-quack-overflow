@@ -33,8 +33,9 @@
   <br><br>
 {{myFriends}}
   <div id="post">
-    <ul class="posts">
-      {{#each posts}}        
+    {{#each posts}}  
+    <ul class="posts" postUser={{this.username}} >
+            
         <div class="post-div">
           <div class="username" postUser={{this.username}} sessionUser={{user.username}}>Username: {{this.username}}</div>
           <div class="message">{{this.message}}</div>
@@ -78,7 +79,6 @@
             {{/each}}
           <br />
         </div>
-        {{!-- {{/if}} --}}
       {{/each}}
     </ul>
   </div>
