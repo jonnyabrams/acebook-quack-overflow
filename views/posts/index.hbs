@@ -35,13 +35,15 @@
   <div id="post">
     <ul class="posts">
       {{#each posts}}
-        <div class="post-div" postId={{this._id}}>
+        {{!-- {{#if user.friends.includes(this.username)}} --}}
+        {{myFriends}}
+        <div class="post-div" postId={{this._id}} username={{this.username}}>
           <div class="username">Username: {{this.username}}</div>
           <div class="message">{{this.message}}</div>
 
-        {{#if this.postImage}}
-          <img class="post-photo" src={{this.postImage}} alt={{this.postImage}}>
-        {{/if}}
+          {{#if this.postImage}}
+            <img class="post-photo" src={{this.postImage}} alt={{this.postImage}}>
+          {{/if}}
 
           <div class="timeAgo">{{this.dateAndTime}}</div>
           <br />
@@ -78,6 +80,7 @@
             {{/each}}
           <br />
         </div>
+        {{!-- {{/if}} --}}
       {{/each}}
     </ul>
   </div>

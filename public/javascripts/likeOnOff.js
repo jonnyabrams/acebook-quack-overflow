@@ -1,9 +1,4 @@
 document.querySelectorAll(".likeUnlike").forEach(button => {
-  console.log(button)
-  console.log(button.getAttribute("username"))
-  console.log(button.getAttribute("likes"))
-
-
   if(button.getAttribute("likes").includes(button.getAttribute("username"))){
     button.value = 'Unlike';
   } else {
