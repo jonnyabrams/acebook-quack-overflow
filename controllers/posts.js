@@ -30,7 +30,6 @@ const PostsController = {
     });
   },
   Delete: ("/posts/:id", function(req, res) {
-
     Post.remove({_id: req.params.id}, (err) => {
       if (err) return console.log(err)
       console.log(req.body)
@@ -40,7 +39,6 @@ const PostsController = {
   Like: ("/posts/like", function(req, res) {
   console.log("got the request")
     console.log(req)
-  
   })
 };
 
