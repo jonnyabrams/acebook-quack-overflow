@@ -2,8 +2,12 @@
 
 ## Contributors
 
-<img width="964" alt="Jonny Abrams" src="https://avatars.githubusercontent.com/u/97295867?v=4">
-
+* [Jonny Abrams](https://github.com/jonnyabrams)
+* [Gayathri Dharmavaram](https://github.com/gdrmvrm)
+* [Valentina Maggio](https://github.com/valentina-maggio)
+* [James Mooney](https://github.com/jam9304)
+* [Chris Pinna](https://github.com/ChrisPinna)
+* [Kenny Sweeney-Baird](https://github.com/KennySB1)
 
 ## Description
 
@@ -45,8 +49,6 @@ This is a clone of Facebook built using the Express.js framework for Node.js, wi
 7. Browse to [http://127.0.0.1:3000](http://127.0.0.1:3000)
 
 ## Demo
-
-
 
 ## Team approach
 
@@ -138,9 +140,9 @@ add the extra client requests
 
 ### Wireframes
 
-![signin](https://drive.google.com/drive/folders/1_jqxU8Mi02MefHo-KpRXz2PWDcja0jlb)
-![signup](https://drive.google.com/drive/folders/1_jqxU8Mi02MefHo-KpRXz2PWDcja0jlb)
-![feeds](https://drive.google.com/drive/folders/1_jqxU8Mi02MefHo-KpRXz2PWDcja0jlb)
+![signin]()
+![signup]()
+![feeds]()
 
 ### Edge cases
 
