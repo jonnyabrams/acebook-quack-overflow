@@ -75,7 +75,7 @@ body {
 
 #main-container {
   margin-left: 550px;
-  margin-right: 250px;
+  margin-right: 300px;
   margin-top: 140px;
   background-color: whitesmoke;
   padding: 10px 10px;
@@ -242,7 +242,7 @@ body {
 }
 #side-bar h4 {
   padding: 15px;
-  margin-left: 80px;
+  margin-left: 95px;
 }
 #new-post-form {
   display: flex;
@@ -300,7 +300,7 @@ body {
 }
 
 .friends-container {
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 20px 20px 20px 30px;
   border-radius: 10px;
   background-color: white;
