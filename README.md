@@ -2,15 +2,16 @@
 
 ## Contributors
 
+<img width="964" alt="Jonny Abrams" src="https://avatars.githubusercontent.com/u/97295867?v=4">
 
 
 ## Description
 
-This is a clone of Facebook.
+This is a clone of Facebook built using the Express.js framework for Node.js, with a MongoDB database and Handlebars templates for the front end. It was a group project as part of Makers Academy and we named our website Quackbook in honour of Quackie, the boot camp's anatine mascot.
 
 ## Technologies used
 
-* JavaScript
+* JavaScript, HTML, CSS
 * Express
 * Nodemon
 * Handlebars
@@ -23,56 +24,41 @@ This is a clone of Facebook.
 ## How to run locally
 
 1. Fork this repository
-2. Rename your fork to `acebook-<team name>`
-3. Clone your fork to your local machine
-4. Install Node.js dependencies
+2. Clone your fork to your local machine
+3. Use Node version 17.8.0 and install dependencies
    ```
    npm install
    ```
-5. Install an ESLint plugin for your editor. For example: [linter-eslint](https://github.com/AtomLinter/linter-eslint) for Atom.
-6. Install MongoDB
+4. Install MongoDB
    ```
    brew tap mongodb/brew
-   brew install mongodb-community@4.4
+   brew install mongodb-community@5.0
    ```
-7. Start MongoDB
+5. Start MongoDB
    ```
    brew services start mongodb-community@5.0
    ```
-
-
-
-1. Install Node Version Manager (NVM)
-   ```
-   brew install nvm
-   ```
-   Then follow the instructions to update your `~/.bash_profile`.
-2. Open a new terminal
-3. Install the latest long term support (LTS) version of [Node.js](https://nodejs.org/en/), currently `16.14.0`.
-   ```
-   nvm install 16
-   ```
-
-   1. Start the server
+6. Start the server
    ```
    npm start
    ```
-2. Browse to [http://127.0.0.1:3000](http://127.0.0.1:3000)
-
-
-
+7. Browse to [http://127.0.0.1:3000](http://127.0.0.1:3000)
 
 ## Demo
 
 
 
-## Features
+## Team approach
 
+The overall goal was ensuring the team was having fun, felt confident, and were included throughout the process. 
 
-
-## Building process
-
-
+* Standups every morning at 10:00
+* Mini-retro after lunch 
+* Retro at 5:30 every evening
+* Pair programming throughout the entirety of the project
+* Regular check-in with team members to make sure nobody was left behind
+* Miro board for sharing project information
+* Trello board for stopping pairs working on the same user story
 
 ### User Stories
 
@@ -145,29 +131,37 @@ add the extra client requests
 
 ### MVP
 
+* User can sign up, sign in and log out
+* User can post a post and delete it
+* User can see all posts in reverse chronological order
+* User can like a post
 
+### Wireframes
 
-### Wireframing
-
-
+![signin](https://drive.google.com/drive/folders/1_jqxU8Mi02MefHo-KpRXz2PWDcja0jlb)
+![signup](https://drive.google.com/drive/folders/1_jqxU8Mi02MefHo-KpRXz2PWDcja0jlb)
+![feeds](https://drive.google.com/drive/folders/1_jqxU8Mi02MefHo-KpRXz2PWDcja0jlb)
 
 ### Edge cases
 
-
+* Sign up with invalid input
+* Sign in with invalid input
+* Only user that creates post can delete post
+* 
 
 ## Future improvements
 
-
-
-
+* User can see only friends posts on feeds page
+* Use cloud server for database
+* Deploy website on Heroku
 
 ### How to run the tests
 
-- Run all tests:
+* Run all tests:
   ```
   npm test
   ```
-- Run separate tests for either linting, unit or integration features:
+* Run separate tests for either linting, unit or integration features:
   ```
   npm run lint             
   npm run test:unit        
