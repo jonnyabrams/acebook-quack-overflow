@@ -1,8 +1,88 @@
-# Acebook
+# Quackbook
 
-## User Stories 
+## Contributors
 
-### MVP
+* [Jonny Abrams](https://github.com/jonnyabrams)
+* [Gayathri Dharmavaram](https://github.com/gdrmvrm)
+* [Valentina Maggio](https://github.com/valentina-maggio)
+* [James Mooney](https://github.com/jam9304)
+* [Chris Pinna](https://github.com/ChrisPinna)
+* [Kenny Sweeney-Baird](https://github.com/KennySB1)
+
+## Description
+
+This is a clone of Facebook built using the Express.js framework for Node.js, with a MongoDB database and Handlebars templates for the front end. It was a group project as part of Makers Academy and we named our website Quackbook in honour of Quackie, the boot camp's anatine mascot.
+
+## Technologies used
+
+* JavaScript, HTML, CSS
+* Express
+* Nodemon
+* Handlebars
+* MongoDB
+* Mongoose
+* ESLint
+* Jest
+* Cypress
+
+## How to run locally
+
+1. Fork this repository
+2. Clone your fork to your local machine
+3. Use Node version 17.8.0 and install dependencies
+   ```
+   npm install
+   ```
+4. Install MongoDB
+   ```
+   brew tap mongodb/brew
+   brew install mongodb-community@5.0
+   ```
+5. Start MongoDB
+   ```
+   brew services start mongodb-community@5.0
+   ```
+6. Start the server
+   ```
+   npm start
+   ```
+7. Browse to [http://127.0.0.1:3000](http://127.0.0.1:3000)
+
+## Demo
+
+#### Sign in page
+
+![signin]()
+
+#### Sign up page
+
+![signup]()
+
+#### Feed page
+
+![feedpage]()
+
+#### Post example
+
+![post]()
+
+#### Comments example
+
+![comment]()
+
+## Team approach
+
+The overall goal was ensuring the team was having fun, felt confident, and were included throughout the process. 
+
+* Standups every morning at 10:00
+* Mini-retro after lunch 
+* Retro at 5:30 every evening
+* Pair programming throughout the entirety of the project
+* Regular check-in with team members to make sure nobody was left behind
+* Miro board for sharing project information
+* Trello board for stopping pairs working on the same user story
+
+### User Stories
 
 #### Login
 
@@ -67,95 +147,55 @@ I would like to be able to unlike
 ```
 ### Further User Stories
 
-#### Login
 ```
-None yet
+As a user, 
+so that I can have friends,
+I would like to be able to send friend requests to other users
+```
+```
+As a user, 
+so that I can have friends,
+I would like to be able to accept friend requests from other users
 ```
 
-#### Posts
-```
-None yet
-```
+### MVP
 
-#### Interations
-```
-None yet
-```
-## Makers Instructions
+* User can sign up, sign in and log out
+* User can post a post and delete it
+* User can see all posts in reverse chronological order
+* User can like a post
 
-This is a Node.js template for the Acebook engineering project.
+### Wireframes
 
-It uses:
+![signin](https://github.com/jonnyabrams/acebook-quack-overflow/blob/final-readme/public/images/screenshots/signin-wireframe.png)
+![signup](https://github.com/jonnyabrams/acebook-quack-overflow/blob/final-readme/public/images/screenshots/signup-wireframe.png)
+![feeds](https://github.com/jonnyabrams/acebook-quack-overflow/blob/final-readme/public/images/screenshots/home-wireframe.png)
 
-- [Express](https://expressjs.com/) web framework for Node.js.
-- [Nodemon](https://nodemon.io/) to reload the server automatically.
-- [Handlebars](https://handlebarsjs.com/) to render view templates.
-- [Mongoose](https://mongoosejs.com) to model objects in MongoDB.
-- [ESLint](https://eslint.org) for linting.
-- [Jest](https://jestjs.io/) for testing.
-- [Cypress](https://www.cypress.io/) for end-to-end testing.
+### Edge cases
 
-## Card wall
+* Sign up with invalid input
+* Sign in with invalid input
+* Only user that creates post can delete post
+* 
 
-REPLACE THIS TEXT WITH A LINK TO YOUR CARD WALL
+## Future improvements
 
-## Quickstart
+* User can see only friends posts on feeds page
+* Use cloud server for database
+* Deploy website on Heroku
 
-### Install Node.js
+### How to run the tests
 
-1. Install Node Version Manager (NVM)
-   ```
-   brew install nvm
-   ```
-   Then follow the instructions to update your `~/.bash_profile`.
-2. Open a new terminal
-3. Install the latest long term support (LTS) version of [Node.js](https://nodejs.org/en/), currently `16.14.0`.
-   ```
-   nvm install 16
-   ```
-
-### Set up your project
-
-1. Fork this repository
-2. Rename your fork to `acebook-<team name>`
-3. Clone your fork to your local machine
-4. Install Node.js dependencies
-   ```
-   npm install
-   ```
-5. Install an ESLint plugin for your editor. For example: [linter-eslint](https://github.com/AtomLinter/linter-eslint) for Atom.
-6. Install MongoDB
-   ```
-   brew tap mongodb/brew
-   brew install mongodb-community@4.4
-   ```
-7. Start MongoDB
-   ```
-   brew services start mongodb-community@4.4
-   ```
-
-### Start
-
-1. Start the server
-   ```
-   npm start
-   ```
-2. Browse to [http://127.0.0.1:3000](http://127.0.0.1:3000)
-
-### Test
-
-- Run all tests
+* Run all tests:
   ```
   npm test
   ```
-- Run a check
-  ```bash
-  npm run lint              # linter only
-  npm run test:unit         # unit tests only
-  npm run test:integration  # integration tests only
+* Run separate tests for either linting, unit or integration features:
   ```
-
-#### Start test server
+  npm run lint             
+  npm run test:unit        
+  npm run test:integration  
+  ```
 
 The server must be running locally with test configuration for the
 integration tests to pass.
@@ -163,16 +203,3 @@ integration tests to pass.
 ```
 npm run start:test
 ```
-
-This starts the server on port `3030` and uses the `acebook_test` MongoDB database,
-so that integration tests do not interact with the development server.
-
-## MongoDB Connection Errors?
-
-Some people occasionally experience MongoDB connection errors when running the tests or trying to use the application. Here are some tips which might help resolve such issues.
-
-- Check that MongoDB is installed using `mongo --version`
-- Check that it's running using `brew services list`
-- Try swapping `127.0.0.1`, everywhere that it appears in your codebase, with `127.0.0.1:`. It might be surprising but this does sometimes make a difference.
-
-If you have issues that are not resolved by these tips, please reach out to a coach and, once the issue is resolved, we can add a new tip!
