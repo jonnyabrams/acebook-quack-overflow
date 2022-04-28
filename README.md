@@ -172,7 +172,6 @@ I would like to be able to accept friend requests from other users
 * Sign up with invalid input
 * Sign in with invalid input
 * Only user that creates post can delete post
-* 
 
 ## Future improvements
 
