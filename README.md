@@ -52,11 +52,11 @@ This is a clone of Facebook built using the Express.js framework for Node.js, wi
 
 #### Sign in page
 
-![signin]()
+![signin](https://github.com/jonnyabrams/acebook-quack-overflow/blob/README-final-version/public/images/screenshots/signin-page.png)
 
 #### Sign up page
 
-![signup]()
+![signup](https://github.com/jonnyabrams/acebook-quack-overflow/blob/README-final-version/public/images/screenshots/signup-page.png)
 
 #### Feed page
 
