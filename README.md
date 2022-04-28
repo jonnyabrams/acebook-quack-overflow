@@ -60,15 +60,11 @@ This is a clone of Facebook built using the Express.js framework for Node.js, wi
 
 #### Feed page
 
-![feedpage]()
-
-#### Post example
-
-![post]()
+![feedpage](https://github.com/jonnyabrams/acebook-quack-overflow/blob/README-final-version/public/images/screenshots/feed.png)
 
 #### Comments example
 
-![comment]()
+![comment](https://github.com/jonnyabrams/acebook-quack-overflow/blob/README-final-version/public/images/screenshots/comments.png)
 
 ## Team approach
 
@@ -168,8 +164,8 @@ I would like to be able to accept friend requests from other users
 ### Wireframes
 
 ![signin](https://github.com/jonnyabrams/acebook-quack-overflow/blob/README-final-version/public/images/screenshots/signin-wireframe.png)
-![signup](https://github.com/jonnyabrams/acebook-quack-overflow/blob/README-final-version/public/images/screenshots/signin-wireframe.png)
-![feeds](https://github.com/jonnyabrams/acebook-quack-overflow/blob/README-final-version/public/images/screenshots/signup-wireframe.png)
+![signup](https://github.com/jonnyabrams/acebook-quack-overflow/blob/README-final-version/public/images/screenshots/signup-wireframe.png)
+![feeds](https://github.com/jonnyabrams/acebook-quack-overflow/blob/README-final-version/public/images/screenshots/feed-wireframe.png)
 
 ### Edge cases
 
