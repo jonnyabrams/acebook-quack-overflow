@@ -167,9 +167,9 @@ I would like to be able to accept friend requests from other users
 
 ### Wireframes
 
-![signin](https://github.com/jonnyabrams/acebook-quack-overflow/blob/final-readme/public/images/screenshots/signin-wireframe.png)
-![signup](https://github.com/jonnyabrams/acebook-quack-overflow/blob/final-readme/public/images/screenshots/signup-wireframe.png)
-![feeds](https://github.com/jonnyabrams/acebook-quack-overflow/blob/final-readme/public/images/screenshots/home-wireframe.png)
+![signin](https://github.com/jonnyabrams/acebook-quack-overflow/blob/README-final-version/public/images/screenshots/signin-wireframe.png)
+![signup](https://github.com/jonnyabrams/acebook-quack-overflow/blob/README-final-version/public/images/screenshots/signin-wireframe.png)
+![feeds](https://github.com/jonnyabrams/acebook-quack-overflow/blob/README-final-version/public/images/screenshots/signup-wireframe.png)
 
 ### Edge cases
 
